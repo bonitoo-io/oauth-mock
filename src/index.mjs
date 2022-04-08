@@ -45,8 +45,8 @@ app.post("/oauth/token", (req, res) => {
   });
 });
 
-app.get("/userinfo", (req, res) => {
-  console.info("GET /userinfo: ", req.header("authorization"));
+app.get("/userinfo", (_req, res) => {
+  console.info("GET /userinfo");
   res.setHeader("Content-Type", "application/json;charset=UTF-8");
   res.status(200);
   res.json(CONFIG.userinfo);
@@ -56,7 +56,7 @@ app.post("/config", (req, res) => {
   console.info("POST /state");
   res.setHeader("Content-Type", "application/json;charset=UTF-8");
   try {
-    const body = req.body
+    const body = req.body;
     if (typeof body !== "object" || body === null) {
       throw new Error("invalid body");
     }
@@ -113,6 +113,7 @@ app.all("/", (req, res) => {
     `<input style="width: 100%" type="text" id="name" name="name" value="${CONFIG.userinfo.name}"><br>`
   );
   res.write('<br><input type="submit" value="Change Configuration">');
+  res.write('<a style="float: right" href="userinfo">OpenID UserInfo endpoint</a>');
   res.write("</form></body></html>");
   res.end();
 });
