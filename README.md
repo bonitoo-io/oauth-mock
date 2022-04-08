@@ -1,6 +1,6 @@
 # oauth2-server-mock
 
-This repository contains a mock [OAuth2](https://oauth.net/2/) Authorization Server with Authorization Code Grant flow and OpenID [UserInfo endpoint](https://openid.net/specs/openid-connect-core-1_0.html#UserInfo) intended for testing. It always authorizes a pre-configured user.
+This repository contains a mock [OAuth2](https://oauth.net/2/) Authorization Server with Authorization Code Grant flow and OpenID [UserInfo endpoint](https://openid.net/specs/openid-connect-core-1_0.html#UserInfo). It is primarily intended for testing, it always authorizes a pre-configured user that can be changed at runtime.
 
 ## Install
 
