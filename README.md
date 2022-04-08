@@ -13,8 +13,7 @@ npm install
 
 ## Configure
 
-There are several environment variables that should be set before starting the OAuth2 Mock Server.
-Modify [./env.sh](./env.sh) and run `source env.sh` to setup the initial configuration.
+Modify [./env.sh](./env.sh) and run `source env.sh` to setup initial configuration of the OAuth2 Mock Server.
 
 ## Start
 
