@@ -1,6 +1,7 @@
 # oauth2-server-mock
 
-This repository contains a simple OAuth2 Mock Server intended for testing. Is always authorizes a pre-configured user.
+This repository contains a simple OAuth2 Mock Server intended for testing. It always authorizes a pre-configured user.
+
 ## Install
 
 Prerequisites: [node.js 14](https://nodejs.org/) or newer
