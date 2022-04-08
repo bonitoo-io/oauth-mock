@@ -24,7 +24,7 @@ npm run start
 
 Initial configuration is printed to console as well as the URL where the server is listening for requests.
 
-## Setup OAuth2 server for chronograf
+## Chronograf Setup
 
 [Chronograf](https://github.com/influxdata/chronograf) can use this OAuth2 Mock server as a generic OAuth2 authentication provider,
 several environment variables must be set before starting chronograf. These variables are shown in [./oauth-for-chronograf.sh](./oauth-for-chronograf.sh).
