@@ -17,7 +17,7 @@ export GENERIC_SCOPES="whatever"
 export GENERIC_NAME=oauth-mock
 export PUBLIC_URL=http://localhost:8888
 
-echo Make sure to setup the following environment variable before your start OAuth Mock server
+echo Make sure to setup the following environment variables before your start OAuth Mock server
 echo export OAUTH2_HOSTNAME=${OAUTH2_HOSTNAME}
 echo export OAUTH2_PORT=${OAUTH2_PORT}
 echo export OAUTH2_REDIRECT_URL=${PUBLIC_URL}/oauth/${GENERIC_NAME}/callback
