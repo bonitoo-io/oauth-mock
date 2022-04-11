@@ -32,8 +32,8 @@ app.get("/oauth/authorize", (req, res) => {
   res.end();
 });
 
-app.post("/oauth/token", (req, res) => {
-  console.info("POST /oauth/token: ", req);
+app.post("/oauth/token", (_req, res) => {
+  console.info("POST /oauth/token: ");
   const token = `t-${new Date().toISOString()}`;
   res.setHeader("content-type", "application/json;charset=UTF-8");
   res.status(200);
