@@ -1,10 +1,12 @@
 /* eslint-disable no-process-exit */
 import express from "express";
+import cors from "cors";
 
 // terminate on DTRL+C or CTRL+D
 process.on("SIGINT", () => process.exit());
 process.on("SIGTERM", () => process.exit());
 const app = express();
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
